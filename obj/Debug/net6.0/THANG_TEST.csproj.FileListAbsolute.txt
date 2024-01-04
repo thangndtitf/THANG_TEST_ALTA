@@ -38,3 +38,7 @@ C:\Users\thang\OneDrive\Desktop\THANG_TEST\obj\Debug\net6.0\refint\THANG_TEST.dl
 C:\Users\thang\OneDrive\Desktop\THANG_TEST\obj\Debug\net6.0\THANG_TEST.pdb
 C:\Users\thang\OneDrive\Desktop\THANG_TEST\obj\Debug\net6.0\THANG_TEST.genruntimeconfig.cache
 C:\Users\thang\OneDrive\Desktop\THANG_TEST\obj\Debug\net6.0\ref\THANG_TEST.dll
+C:\Users\thang\OneDrive\Desktop\THANG_TEST\bin\Debug\net6.0\test.json
+C:\Users\thang\OneDrive\Desktop\THANG_TEST\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\thang\OneDrive\Desktop\THANG_TEST\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\thang\OneDrive\Desktop\THANG_TEST\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

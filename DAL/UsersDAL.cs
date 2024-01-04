@@ -108,7 +108,6 @@ namespace THANG_TEST.DAL
                 {
                     user = null;
                 }
-      
                 return user;
             }
         }
