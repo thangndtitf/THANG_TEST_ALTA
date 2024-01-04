@@ -84,7 +84,7 @@ namespace THANG_TEST.BLL
                     result.message = "Insert  User Success";
                     result.messageDetail = string.Empty;
                     result.dataObject = user;
-                    return null;
+                    return result;
                 }
                 else
                 {
@@ -117,7 +117,7 @@ namespace THANG_TEST.BLL
                     result.message = "Update  User Success";
                     result.messageDetail = string.Empty;
                     result.dataObject = user;
-                    return null;
+                    return result;
                 }
                 else
                 {
@@ -150,7 +150,7 @@ namespace THANG_TEST.BLL
                     result.message = "Delete  User Success";
                     result.messageDetail = string.Empty;
                     result.dataObject = user;
-                    return null;
+                    return result;
                 }
                 else
                 {
