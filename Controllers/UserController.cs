@@ -46,5 +46,12 @@ namespace THANG_TEST.Controllers
             return userBll.deleteUser(deleteUser);
         }
 
+        [HttpPost]
+        [Route("/Login")]
+        public ResultObject login([FromBody] UserLogin userLogin)
+        {
+            return userBll.Login(userLogin.inputLogin, userLogin.password);
+        }
+
     }
 }

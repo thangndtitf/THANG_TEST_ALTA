@@ -161,9 +161,38 @@ namespace THANG_TEST.BLL
                     return result;
                 }
             }
+        }
+        public ResultObject Login(String loginInput, String password)
+        {
+            ResultObject result = new ResultObject();
+            if(loginInput == null || password == null) {
+                result.isError = true;
+                result.message = "Login Fail";
+                result.messageDetail = "Your userName or password is Null";
+                result.dataObject = null;
+                return result;
+            }else
+            {
+                User user = userDAL.login(loginInput, password);
+                if(user == null)
+                {
+                    result.isError = true;
+                    result.message = "Login Fail";
+                    result.messageDetail = "Your user is Null";
+                    result.dataObject = null;
+                    return result;
+                }
+                else
+                {
+                    result.isError = false;
+                    result.message = "Login Success";
+                    result.messageDetail = String.Empty;
+                    result.dataObject = null;
+                    return result;
+                }
             }
         }
 
-
     }
+}
 
