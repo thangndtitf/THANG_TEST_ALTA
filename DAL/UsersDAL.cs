@@ -74,5 +74,41 @@ namespace THANG_TEST.DAL
                 return result;
         }
 
+        public User findUserByInput(String inputLogin)
+        {
+            User user = null;
+
+            using (var _userDbContext = new UserDbContextcs())
+            {
+                user = _userDbContext.Users.FirstOrDefault(u => u.Name == inputLogin);
+                if (user == null)
+                {
+                    user = _userDbContext.Users.FirstOrDefault(u => u.Email == inputLogin);
+                }
+            }
+
+            return user;
+
+        }
+
+        public User login ( String inputLogin, String password)
+        {
+            User user = null;
+            using (var _userDbContext = new UserDbContextcs())
+            {
+                user = findUserByInput (inputLogin);
+                if(user != null)
+                {
+                    if(user.Password != password)
+                    {
+                        user = null;
+                    }
+                }
+                user = null;
+                return user;
+            }
+        }
+
+
     }
 }

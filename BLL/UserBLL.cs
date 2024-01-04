@@ -20,7 +20,7 @@ namespace THANG_TEST.BLL
                 result.dataObject = users;
                 return result;
             }
-            if(users == null)
+            else 
             {
                 result.isError = true;
                 result.message = "Get List Fail";
@@ -166,4 +166,4 @@ namespace THANG_TEST.BLL
 
 
     }
-}
+
